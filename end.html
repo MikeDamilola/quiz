@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Task</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div id="finish" class="flex-center flex-column">
+            <h1 id="finalscore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your score</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScorebtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <a href="/quiz.html" class="btn">Restart Quiz</a>
+            <a href="/" class="btn">Back Home<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+
+    <script src="end.js"></script>
+</body>
+</html>
